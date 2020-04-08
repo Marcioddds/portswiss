@@ -40,11 +40,27 @@ body {height:100%;overflow:auto}
     font-size: 15px;
    
 }
+#contactos p:hover{
+  cursor: pointer;
+  background-color: #56585b; 
+  padding: 16px;
+}
 #contactos a{
     margin: 10px;
 }
 #contactos p{
     margin: 20px;
+}
+.redes{
+  margin-left: 20px;
+  float: right;
+  margin-right: -40px;
+}
+.redes i{
+  color: white;
+}
+.redes i:hover{
+  cursor: pointer;
 }
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
 
@@ -267,17 +283,18 @@ img {
   background: linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0) 100%);
  
   display: -webkit-box;
-  display: flex;
+  
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  flex-direction: column;
+ 
   -webkit-box-pack: center;
   justify-content: center;
   -webkit-box-align: center;
  position: absolute;
  overflow: hidden;
  align-items: center;
-
+ display: flex;
+  flex-direction: column;
 }
 
 .flex-form input[type="submit"] {
@@ -490,7 +507,7 @@ input[type="search"] {
     font-size: 1rem;
       
     padding: 0.8rem 2rem;
-    height: 15px;
+    height: 18px;
     background-color: rgb(255, 255, 255);
     border: none;
     width: 120px;
@@ -569,11 +586,21 @@ input[type="search"] {
      font-family: "Open Sans", "sans-serif"; 
      height: 10px;
      color: rgb(199, 197, 197);
+     font-style: normal;
+     font-weight: 200;
 }
 .destaque2{
     grid-row: 2 / 2;
     grid-column-start: 1;
     grid-column-end: 1;
+}
+.grid3 h2{
+  text-align: center;
+   font-family: "Open Sans", "sans-serif"; 
+   height: 10px;
+   color: rgb(199, 197, 197);
+   font-style: normal;
+   font-weight: 200;
 }
   .cards {
     background-color: #333;  
@@ -746,6 +773,21 @@ input[type="search"] {
   article.card:hover .infos .seats, article.card:hover .infos .txt, article.card:hover .infos .details {
     opacity: 1;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*grid3*/
   .grid3{
     background-color: #333;
     grid-row: 1 / 1;
@@ -753,18 +795,64 @@ input[type="search"] {
     grid-column-end: 3;
     top: 0;
   }
+  #publicidade1{
+    padding-top: 30px;
+    height: 300px;
+    width: 90%;
+    font-size: 13px;
+  }
+  
   .grid4{
-    background-color: #333;
+    background-color: #b3b0b0;
     grid-row: 2 / 3;
     grid-column-start: 2;
     grid-column-end: 3;
     top: 0;
+    height: 300px;
+    width: 90%;
+    margin-top: 30px;
+    display: block;
+    align-items: center;
+    text-align: center;
+    
   }
   
+  .grid4 h2{color: white
+    
+  }
+  #city{
+    margin: auto;
+    width: 80%;
+    
+  
+    -webkit-box-shadow: 0 8px 6px -6px rgb(100, 99, 99);
+	   -moz-box-shadow: 0 8px 6px -6px rgb(100, 99, 99);
+	        box-shadow: 0 8px 6px -6px rgb(100, 99, 99);
+ 
   
   
+ 
+ 
+  }
+  #btnsearch1{
+    margin-left: 150px;
+    align-items: center;
+    
+  }
+  #btnsearch1 input{
+   background-color: #56585b;
+   color: white;
+   -webkit-box-shadow: 0 8px 6px -6px rgb(100, 99, 99);
+	   -moz-box-shadow: 0 8px 6px -6px rgb(100, 99, 99);
+	        box-shadow: 0 8px 6px -6px rgb(100, 99, 99);
+  }
   
-
+  #btnsearch1 input:hover{
+    background-color: #838282;
+   cursor: pointer;
+   transition: ease-in .4s;
+    
+   }
 
 
 
@@ -1042,5 +1130,18 @@ input[type="search"] {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/*login*/
 
 
