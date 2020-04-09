@@ -1,0 +1,14 @@
+.empresasMain{
+    display: grid;
+    grid-template-columns: 16% 84%;
+}
+
+.sideBar{
+    grid-column: 1/1;
+ 
+    height: 500px;
+}
+
+.empresasShow{
+    background-color: rgb(204, 203, 202);
+}
