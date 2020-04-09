@@ -63,6 +63,17 @@ body {overflow: auto;}
 .redes i:hover{
   cursor: pointer;
 }
+.redes{
+  margin-left: 20px;
+  float: right;
+  margin-right: -40px;
+}
+.redes i{
+  color: white;
+}
+.redes i:hover{
+  cursor: pointer;
+}
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
 
 
@@ -846,6 +857,10 @@ input[type="search"] {
 	        box-shadow: 0 8px 6px -6px rgb(100, 99, 99);
  
   
+    -webkit-box-shadow: 0 8px 6px -6px rgb(100, 99, 99);
+	   -moz-box-shadow: 0 8px 6px -6px rgb(100, 99, 99);
+	        box-shadow: 0 8px 6px -6px rgb(100, 99, 99);
+ 
   
  
  
