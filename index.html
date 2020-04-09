@@ -18,6 +18,8 @@
   <script defer src="popup.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Oswald:wght@500&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
 </head>
 <body>
  <header>
@@ -28,17 +30,35 @@
 
         <div class="tutorial" id="dropmenu">
                 <ul id="dropdown">
-                    <li><a href="index.html">Home <i class="fas fa-chevron-down fa-xs"></i></a></li>
-                    <li><a href="/store">Loja <i class="fas fa-chevron-down fa-xs"></i></a>
+                    <li><a href="index.html">Home </a></li>
+                    <li><a href="/store">Empresas <i class="fas fa-chevron-down fa-xs"></i></a>
                         <ul>
+                            <li>Adicionar empresas</li>
+                            <li>Empresas </li>
+                            
+                          </ul>
+                        </li>
+                    <li><a href="servicos.html"> Noticias<i class="fas fa-chevron-down fa-xs"></i></a>
+                      <ul>
+                        <li>Graphic Design</li>
+                        <li>Website Design </li>
+                        <li>Python Programming</li>
+                        <li>PHP Programming</li>
+                      </ul></li>
+                    <li><a href="paginasweb.html">Blog <i class="fas fa-chevron-down fa-xs"></i></a>
+                    <ul>
                             <li>Graphic Design</li>
                             <li>Website Design </li>
                             <li>Python Programming</li>
                             <li>PHP Programming</li>
-                          </ul>
-                        </li>
-                    <li><a href="servicos.html">Serviços <i class="fas fa-chevron-down fa-xs"></i></a></li>
-                    <li><a href="paginasweb.html">Cria a tua web  <i class="fas fa-chevron-down fa-xs"></i></a></li>   
+                          </ul></li>
+                    <li><a href="paginasweb.html">Viagens <i class="fas fa-chevron-down fa-xs"></i></a>
+                    <ul>
+                            <li>Graphic Design</li>
+                            <li>Website Design </li>
+                            <li>Python Programming</li>
+                            <li>PHP Programming</li>
+                          </ul></li>   
                 </ul>     
         </div>     
        
@@ -75,8 +95,8 @@
           <label for="from">
             <i class="ion-location"></i>
           </label>
-          <input type="search" placeholder="O que procuras?(ex: Transportes em Zurique)">
-          <input type="submit" value="Procurar">
+          <input type="search" placeholder="O que procuras? ex: Transportes em Zurique">
+          <input type="submit" value="&#xF002; Procurar" style="font-family:Arial, FontAwesome">
         </form>
       </div>
     </div>
@@ -88,7 +108,7 @@
       
        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <div class="form__group">
-          <input type="text" class="form__input" id="cantao" placeholder="&#xf041; Cantão "  style="font-family:FontAwesome" required="" />
+          <input type="text" class="form__input" id="cantao" placeholder="&#xf041; Cantão "  style="font-family:Arial, FontAwesome"  required="" />
           <label for="name" class="form__label">Cantão</label>
         </div>
         <div class="form__group">
@@ -291,23 +311,57 @@
 
         <div class="grid4">
           <div class="title">
-            <h2>Empregos na Suiça</h2>
-          </div><br><br>
-          <div class="form__group">
-            <input type="text" class="form__input" id="city" placeholder=" Cantão "   required="" />
-            <label for="name" class="form__label">Cantão</label>
+            <h2>Transportes entre Portugal e Suiça</h2>
           </div>
+          <br><br>
+
+        <div class="worksearch2">
+          <div class="form__group">
+            <select type="text"   class="form__input" id="pais2" placeholder="Filtrar por" required="" >
+              <option value="1" style="display: none;">Escolhe o País de origem...</option>
+                <option value="1">Portugal</option>
+                <option value="2">Suiça</option>
+            </select>
+           
+          </div>
+          <br>
+          <div class="inflex">
+          <div class="form__group">
+          <select type="text"  class="form__input" id="cityorigem" placeholder="Filtrar por" required="" >
+              <option style="display: none;">Cidade de origem...</option>
+              
+              <option class="pt">Braga</option>
+              <option class="sw">Suiça</option>
+              <option class="pt">Porto</option>
+              <option class="sw">Suiça</option>
+          </select>
+          
+          </div>
+          <div class="form__group">
+          <select type="text"  class="form__input" id="citydestin" placeholder="Filtrar por" required="" >
+            <option style="display: none;">Cidade de destino...</option>
+            <option class="ptdes">Braga</option>
+            <option class="swdes">Suiça</option>
+            <option class="ptdes">Porto</option>
+            <option class="swdes">Suiça</option>
+          </select>
+        
+          </div>
+          </div>
+      <br>
+
+       
           <div class="form__group" id="btnsearch1">
             <input type="submit" value="&#xF002; Procurar" class="form__input" id="name" placeholder=" Search" required=""style="font-family:Arial, FontAwesome" />
    
           </div>
         </div>
-
+      </div>
 
 
     </div></section>
-<br><br>
-<section class="news">
+<br>
+<section class="news" id="mainnews">
     <header class="main-post-wrapper">
         <div class="progress-bar progress-bar--primary hide-on-desktop">
           <div class="progress-bar__fill"></div>
@@ -443,27 +497,30 @@
 
    <footer>
     <section class="footer">
+      
         <ul class="list1" id="lista1">
             <li><a href="aboutus.html">Sobre nós</a></li>
             <li><a href="/store">Loja</a></li>
             <li><a href="#">Cria a identidade da tua empresa</a></li>
             <li><a href="servicos.html">Serviços</a></li>
         </ul>
-        <nav class="newsletter">
-            <h3>Subscreve a Newsletter</h3>
-            <div><a id="buttonsub" href="#">Subscreve</a></div>
-            
-        </nav>
+        
         <ul class="list1" id="lista2">
             <li><a href="contato.html">Contacto</a></li>
             <li><a href="parcerias.html">Parcerias</a></li>
             <li><a href="paginasweb.html">Cria a tua página web</a></li>
             <li><a href="#">Politicas de privacidade</a></li>
         </ul>
+        <ul class="list1" id="lista3">
+          <li><a href="contato.html">Contacto</a></li>
+          <li><a href="parcerias.html">Parcerias</a></li>
+          <li><a href="paginasweb.html">Cria a tua página web</a></li>
+          <li><a href="#">Politicas de privacidade</a></li>
+      </ul>
     </section>
 </footer>
 <nav class="design">
-    <span>© 2020 DS, All Rights Reserved | Created by MS</span>
+    <span>© 2020 DS, All Rights Reserved</span>
     
     
 
@@ -562,7 +619,7 @@
       }</script>
 <script>let slide_data = [
     {
-      'src':'resources/images/porto.jpg',
+      'src':'resources/images/porto2.jpg',
       'title':'',
       'copy':'sdcvbdvb'
     },
@@ -710,7 +767,7 @@
       }
     }
  </script>
-   <script src="carousel.js"></script>
+   <script src="resources/js/transportsearch.js"></script>
    <script src="/resources/js/jquery-ui.min.js"></script>
    <script src="/resources/fullclip.min.js"></script>
    <script>

@@ -3,7 +3,7 @@ body{
     background-color: #333;
     font-family: "Open Sans", "sans-serif";
 }
-body {height:100%;overflow:auto}
+body {overflow: auto;}
 #navbar{
     align-items: center;
      display: flex;
@@ -50,6 +50,7 @@ body {height:100%;overflow:auto}
 }
 #contactos p{
     margin: 20px;
+    padding: 16px;
 }
 .redes{
   margin-left: 20px;
@@ -69,7 +70,7 @@ body {height:100%;overflow:auto}
 
 img {
   max-width: 100%;
-  height: 100vh;
+  height: 90vh;
 }
 
 .caption {
@@ -95,6 +96,8 @@ img {
   transition: 700ms ease-in all;
 }
 .caption .caption-heading h1 {
+ 
+ margin-left: 20px;
   font-size: 2rem;
   margin-bottom: 1.5rem;
  
@@ -104,6 +107,10 @@ img {
   color: white;
 }
 .caption .caption-subhead {
+  -webkit-box-shadow: 0 8px 6px -6px rgb(100, 99, 99);
+	   -moz-box-shadow: 0 8px 6px -6px rgb(100, 99, 99);
+	        box-shadow: 0 8px 6px -6px rgb(100, 99, 99);
+ 
   font-size: 1rem;
   font-weight: 300;
   text-transform: uppercase;
@@ -132,7 +139,7 @@ img {
 
 .container {overflow: hidden;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   background-color: #2C302E;
   display: flex;
   position: relative;
@@ -506,7 +513,7 @@ input[type="search"] {
     color: #333;
     font-size: 1rem;
       
-    padding: 0.8rem 2rem;
+    padding: 0.7rem 2rem;
     height: 18px;
     background-color: rgb(255, 255, 255);
     border: none;
@@ -531,6 +538,7 @@ input[type="search"] {
   }
   .searchwork option{
     font-size: 1.1rem;
+    height: 20px;
 }
 #cantao{
     width: 300px;
@@ -539,11 +547,19 @@ input[type="search"] {
 #btnsearch input{
     background-color: #b3b0b0;
     color: white;
+    -webkit-box-shadow: 0 8px 6px -6px rgb(100, 99, 99);
+	   -moz-box-shadow: 0 8px 6px -6px rgb(100, 99, 99);
+	        box-shadow: 0 8px 6px -6px rgb(100, 99, 99);
+ 
 }
 #btnsearch input:hover{
     background-color:  #706f6f;
     cursor: pointer;
 
+}
+
+#name option{
+  height: 50px;
 }
 
 
@@ -787,7 +803,7 @@ input[type="search"] {
 
 
 
-  /*grid3*/
+  /*grid3c4*/
   .grid3{
     background-color: #333;
     grid-row: 1 / 1;
@@ -835,7 +851,7 @@ input[type="search"] {
  
   }
   #btnsearch1{
-    margin-left: 150px;
+    margin-left: 160px;
     align-items: center;
     
   }
@@ -854,6 +870,38 @@ input[type="search"] {
     
    }
 
+.grid4 .form__input{
+  padding:11px;
+}
+.worksearch2 select{
+  -webkit-box-shadow: 0 8px 6px -6px rgb(100, 99, 99);
+	   -moz-box-shadow: 0 8px 6px -6px rgb(100, 99, 99);
+	        box-shadow: 0 8px 6px -6px rgb(100, 99, 99);
+  
+}
+.worksearch2 select:hover{
+background-color: rgb(230, 228, 228);
+}
+#pais2{
+  margin: auto;
+  width: 400px;
+}
+#pais2:hover{
+ cursor: pointer;
+}
+.inflex{
+  display: flex;
+  width: 430px;
+  margin: auto;
+  
+}
+.inflex select{
+  width: 185px;
+}
+.inflex select:hover{
+  cursor: pointer;
+}
+  
 
 
 
@@ -866,10 +914,13 @@ input[type="search"] {
 /*news*/
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap");
 
-
+#mainnews{
+  margin:auto;
+  width: 95%;
+}
 
 .news {
-  margin: 0;
+ 
   padding: 0;
   height: 70vh;
   display: grid;
@@ -1137,11 +1188,35 @@ input[type="search"] {
 
 
 
+/*footer*/
+.footer{
+  display: flex;
+  background-color: #888585;
+  opacity: 0.7;
+  margin: auto;
+  text-align: center;
+  justify-content: space-around;
+  line-height: 40px;
+height: 200px;
+color: white;
+}
+.footer ul{
+  list-style: none;
+}
+.footer a{
+  text-decoration: none;
+  color: white;
+}
+.footer a:hover{
+ color: rgb(209, 206, 206);
+}
 
 
-
-
-
-/*login*/
+.design{
+  margin: auto;
+  color: white;
+  height: 30px;
+  text-align: center;
+}
 
 
